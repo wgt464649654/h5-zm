@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="../../vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>学习力测评</title>
+</head>
+<body>
+  <div id='app'>
+    <back-icon></back-icon>
+    <page-title
+      v-bind:title="title"
+      v-bind:key="title">
+    </page-title>
+    <div class="tips">
+      <div class="title-tips-text">亲爱的{{ name }}同学</div>
+      <image src="../../images/biaoti_bg.png" class="width2"></image>
+    </div>
+    <div class="content">
+      <div class="content-text">
+        说到学习，你是头大呢，还是开心呢?学习对每个人来说，是必须的，那么你面对学习的时候，你学习力是强，还是弱?你想知道自己是否有学习力嘛？来做个学习力诊断测试吧！</div>
+      <image src="../../images/neirong_bg.png" class="width1"></image>
+    </div>
+    <div class="button-div">
+      <button onclick="javascrtpt:window.location.href='../topic/index.html'">
+        <div class="button-text-white">开始测试</div>
+        <image src="../../images/kaishiceping_btn.png" class="width3"></image>
+      </button>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="../../js/main.js"></script>
+<script type="text/javascript">
+  var app = new Vue({
+  el: '#app',
+  data: {
+    title: '学习力测评',
+    name: '某某某'
+  }
+  })
+</script>
+</html>

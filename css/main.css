@@ -1,0 +1,59 @@
+body {
+  background: #A6DFF0;
+  font-size: 20px;
+}
+
+.left-arrows {
+  position: absolute;
+  z-index: 9;
+  margin: 5vw;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  width: 4vw;
+  height: 4vw;
+  transform: rotate(45deg);
+}
+
+.button-text-white {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 2.5vw;
+  color: white;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15.6vw;
+}
+
+.inline-center {
+  text-align: center;
+}
+
+.width1 {
+  width: 90vw;
+}
+
+.width2 {
+  width: 75vw;
+}
+
+.width3 {
+  width: 70vw;
+}
+
+.button-div {
+  position: relative;
+  text-align: center;
+  margin-top: 10vw;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}

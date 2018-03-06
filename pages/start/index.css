@@ -1,0 +1,31 @@
+.tips {
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  margin-top: 5vw;
+}
+
+.title-tips-text {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 5vw;
+  letter-spacing: 2px;
+}
+
+.content-text {
+  position: absolute;
+  text-align: left;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 15vw;
+  bottom: 0;
+  width: 70vw;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>跳转页面</title>
+</head>
+<body>
+
+</body>
+  <script type="text/javascript">
+    const evaluated = false;
+    if(evaluated) {
+      $(window).attr('location','pages/result/index.html');
+    } else {
+      $(window).attr('location','pages/start/index.html');
+    }
+  </script>
+</html>

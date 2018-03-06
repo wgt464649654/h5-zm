@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="../../vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>学习力测评</title>
+</head>
+<body>
+  <div id='app'>
+    <back-icon></back-icon>
+    <page-title
+      v-bind:title="title"
+      v-bind:key="title">
+    </page-title>
+    <div class="content">
+      <div class="content-text">
+        <div>{{ data.title }}</div>
+        <div v-for="answer in data.answers" class="answer">
+          <input type="radio" name="answer" v-bind:value="answer">
+          <span >{{ answer }}</span>
+        </div>
+      </div>
+      <image src="../../images/pencil.png" class="pencil"></image>
+      <image src="../../images/img_fox.png" class="img_fox"></image>
+      <image src="../../images/bg.png" class="width1"></image>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="../../js/main.js"></script>
+<script type="text/javascript">
+  var app = new Vue({
+  el: '#app',
+  data: {
+    title: '学习力测评',
+    name: '某某某',
+    data: {
+      title: '1、心情不好的时候，你会怎么做？',
+      answers: ['吃东西', '打人', '骂人', '一人饮酒醉']
+    }
+  }
+  })
+</script>
+</html>
